@@ -10,6 +10,7 @@ mk_buffer binary_printf(mk_buffer buffer, va_list args);
 sstring_printf(mk_buffer buffer, va_list args)(mk_buffer buffer);
 mk_buffer write_nulmk_buffer 
 mk_buffer p_printf(mk_buffer buffer, va_list args);
+mk_buffer write_nul(mk_buffer buffer);
 mk_buffer rot13_printf(mk_buffer buffer, va_list args);
 
 #endif
