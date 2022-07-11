@@ -6,5 +6,6 @@
 
 int _putchar(char c);
 int _printf(const char *format, ...);
+mk_buffer binary_printf(mk_buffer buffer, va_list args);
 
 #endif
