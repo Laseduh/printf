@@ -8,7 +8,7 @@
  *
  * Return: Pointer to struct buffer.
  */
-mk_buffer binary_fmt(mk_buffer buffer, va_list args)
+mk_buffer binary_printf(mk_buffer buffer, va_list args)
 {
 	int j, len, temp;
 	unsigned int num;
