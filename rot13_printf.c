@@ -7,7 +7,7 @@
  *
  * Return: Pointer to struct buffer.
  */
-mk_buffer rot13_fmt(mk_buffer buffer, va_list args)
+mk_buffer rot13_printf(mk_buffer buffer, va_list args)
 {
 	int i;
 	char *str;
