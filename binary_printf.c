@@ -2,7 +2,7 @@
 #include <stdarg.h>
 
 /**
- * binary_fmt - Handles conversion specifier "b"
+ * binary_printf - Handles conversion specifier "b"
  * @buffer: Pointer to struct buffer
  * @args: the integer to be converted to lowercase hex
  *
