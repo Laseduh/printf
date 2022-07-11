@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * str_fmt - Handles conversion specifier "s"
+ * sstring_printf - Handles conversion specifier "s"
  * @buffer: Pointer to struct buffer
  * @args: the string to be printed
  *
  * Return: Pointer to struct buffer.
  */
-mk_buffer str_fmt(mk_buffer buffer, va_list args)
+mk_buffer sstring_printf(mk_buffer buffer, va_list args)
 {
 	int i;
 	char *str, *null_string;
