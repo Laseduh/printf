@@ -8,19 +8,19 @@
  */
 int _printf(const char *format, ...)
 {
-int printed_chars;
-conver_t f_list[] = {
-{"c", print_char},
+pt_fmt pt_format[] = {
+
+{"c", printed_char},
 {"s", print_string},
 {"%", print_percent},
 {NULL, NULL}
 };
 
-va_list arg_list;
+va_list valist;
 int num_ch = 0;
 
 va_start(valist, format);
-num_ch = get_print(format, valist, pt_format);
+num_ch = get_print(format, valist);
 va_end(valist);
 return (num_ch);
 }
