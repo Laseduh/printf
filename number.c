@@ -22,6 +22,7 @@ char *convert(long int num, int base, int flags, params_t *params)
 	{
 		n = -num;
 		sign = '-';
+
 	}
 	array = flags & CONVERT_LOWERCASE ? "0123456789abcdef" : "0123456789ABCDEF";
 	ptr = &buffer[49];
@@ -57,6 +58,8 @@ int print_unsigned(va_list ap, params_t *params)
 	params->unsign = 1;
 	return (print_number(convert(l, 10, CONVERT_UNSIGNED, params), params));
 }
+
+
 
 /**
  * print_address - prints address
